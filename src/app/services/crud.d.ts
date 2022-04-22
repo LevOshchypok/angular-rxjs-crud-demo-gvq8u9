@@ -1,7 +1,7 @@
-import { Observable } from "rxjs";
+import { Observable } from 'rxjs';
 
 export interface CrudInterface {
-  create: (itemName: string) => Observable<{ data: any[]; total: number }>;
+  create: (itemName: string) => Observable<string>;
   read: (
     searchString: string,
     pagination: { offset: number; limit: number }
